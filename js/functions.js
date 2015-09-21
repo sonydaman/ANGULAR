@@ -1,5 +1,5 @@
-$(function () {
-  $('[data-toggle="popover"]').popover()
+jquery(function () {
+  jquery('[data-toggle="popover"]').popover()
 })
 
 
