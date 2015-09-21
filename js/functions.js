@@ -1,6 +1,10 @@
-jquery(function () {
-  jquery('[data-toggle="popover"]').popover()
+var dom = {};
+dom.query = jQuery.noConflict( true );
+
+dom.query(function () {
+  dom.query('[data-toggle="popover"]').popover()
 })
+
 
 
 var app = angular.module('myApp', []);
