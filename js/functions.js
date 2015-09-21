@@ -24,7 +24,7 @@ app.controller('customersCtrl', function($scope, $http) {
 	
 	var req = {
  method: 'GET',
- url: 'data/text.json',
+ url: "http://www.w3schools.com/angular/customers.php",
  headers: {
    'Content-Type': undefined
  },
