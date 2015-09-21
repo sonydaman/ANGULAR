@@ -24,7 +24,7 @@ app.controller('customersCtrl', function($scope, $http) {
 	
 	var req = {
  method: 'GET',
- url: "http://www.w3schools.com/angular/customers.php",
+ url: "http://rawgit.com/sonydaman/ANGULAR/master/data/text.json",
  headers: {
    'Content-Type': undefined
  },
@@ -34,10 +34,8 @@ app.controller('customersCtrl', function($scope, $http) {
 	
 	
     $http(req)//.get
-	//("http://www.w3schools.com/angular/customers.php")
 	//$http.get("data/text.json")
-	//$http.get("http://16.78.25.115:7000/tmpfiles/text.json")
-    .success(function(response,d) {
+	.success(function(response,d) {
 		console.log(d);
 		
 		$scope.names = response.records;})
